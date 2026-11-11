@@ -1,0 +1,17 @@
+[project]
+name = "devpulse"
+version = "1.0.0"
+description = "GitHub Engineering Analytics Platform"
+requires-python = ">=3.12"
+dependencies = [
+  "httpx==0.28.1",
+  "psycopg[binary]==3.2.9",
+  "pydantic==2.11.7",
+  "pydantic-settings==2.10.1",
+  "python-dotenv==1.1.1",
+  "boto3==1.35.99",
+  "kafka-python==2.0.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

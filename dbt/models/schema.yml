@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: stg_github_records
+    columns:
+      - name: repository_full_name
+        tests: [not_null]
+      - name: resource_type
+        tests: [not_null]
+      - name: record_id
+        tests: [not_null]
+  - name: mart_repository_activity
+    columns:
+      - name: repository_full_name
+        tests: [not_null, unique]
+  - name: mart_pull_request_metrics
+    columns:
+      - name: repository_full_name
+        tests: [not_null, unique]
