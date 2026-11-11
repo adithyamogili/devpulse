@@ -12,3 +12,4 @@ dbt/logs/
 .sparkStaging/
 .DS_Store
 dbt/profiles.yml
+*.egg-info/
