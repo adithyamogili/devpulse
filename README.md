@@ -175,6 +175,7 @@ This is destructive. Do not run it unless you intentionally want to reset DevPul
 - GitHub public REST endpoints are used; no webhook receiver is included in this baseline.
 - The first extraction is intentionally bounded by `--max-pages`; it is not a complete history.
 - Kafka and MinIO are implemented as local services. This Compose stack is for development, not
+- CI runner recovery test.
   production deployment or high availability.
 - Spark uses the PostgreSQL JDBC driver via `--packages`, which requires network access on first run.
 - Airflow uses its official image with the project dependencies installed at build time.
